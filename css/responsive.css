@@ -1,0 +1,39 @@
+/* iPads and tables - portrait */
+
+@media screen and (max-width: 768px) {
+  [aria-controls="navbarDropdown"] {
+    display: block;
+  }
+
+  [aria-expanded="false"] ~ ul {
+    display: none;
+  }
+
+  [aria-expanded="true"] ~ ul {
+    display: block;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+@media (max-width: 767px) {
+  hr {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1700px) {
+  body {
+    max-width: 1700px;
+  }
+
+  header {
+    max-width: 1700px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
