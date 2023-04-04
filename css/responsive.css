@@ -13,6 +13,10 @@
     display: block;
   }
 
+  section {
+    margin-top: var(--size-50);
+  }
+
   /* Section 1 */
   .section-1 {
     margin-top: 0;
@@ -27,6 +31,20 @@
     margin-top: var(--size-10);
   }
 
+  .text-block h2,
+  .text-block p {
+    text-align: center;
+  }
+
+  .text-block .video-btn {
+    justify-content: center;
+    margin-bottom: var(--size-50);
+  }
+
+  .icons {
+    max-width: 76%;
+  }
+
   /* Section 2 */
   .key-benefits .title {
     margin-bottom: var(--size-50);
@@ -37,6 +55,36 @@
   .cards .card {
     flex-basis: 330px;
   }
+
+  /* Section 3 */
+  .software-for-people {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .software-for-people .video-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .title-software-for-people h3 {
+    text-align: center;
+  }
+
+  .software-for-people .image-wrapper {
+    margin-top: var(--size-50);
+  }
+
+  /* Section 4 */
+  .section-4 .dots-wrapper {
+    flex-wrap: wrap;
+  }
+
   /* Footer */
   .lower-footer {
     margin-top: var(--size-40);
