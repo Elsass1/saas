@@ -12,6 +12,43 @@
   [aria-expanded="true"] ~ ul {
     display: block;
   }
+
+  /* Section 1 */
+  .section-1 {
+    margin-top: 0;
+  }
+
+  .section-1 .home-page {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    margin-top: var(--size-10);
+  }
+
+  /* Section 2 */
+  .key-benefits .title {
+    margin-bottom: var(--size-50);
+  }
+  .cards {
+    gap: var(--size-30);
+  }
+  .cards .card {
+    flex-basis: 330px;
+  }
+  /* Footer */
+  .lower-footer {
+    margin-top: var(--size-40);
+  }
+  .upper-wrapper {
+    margin-bottom: 20px;
+  }
+
+  .lower-wrapper {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
 }
 
 @media (min-width: 1200px) {
