@@ -140,6 +140,7 @@
       "long long"
       "components images"
       "cancel money";
+    margin-bottom: var(--size-40);
   }
 
   .pricing-grid .long {
@@ -189,6 +190,46 @@
   .long p {
     margin-right: 0;
     margin-left: 0;
+  }
+
+  /* Section-8 */
+  .section-8 {
+    margin-top: -80px;
+    background: #20335b;
+    gap: 0;
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .section-8 .hire-us-container {
+    flex-direction: row;
+    margin-left: 0;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .text-block-2 h3 {
+    margin-bottom: var(--size-5);
+  }
+
+  .text-block-2 .text-wrapper {
+    width: 22.25rem;
+  }
+
+  .testimonials {
+    margin-bottom: 32px;
+  }
+
+  .images-2 {
+    margin-top: var(--size-20);
+    max-width: 100%;
+    gap: 23px;
+  }
+
+  .section-8 .form-container {
+    margin: -20px 20px var(--size-20);
+    max-width: 100%;
+    max-height: 40.5rem;
   }
 
   /* Footer */
