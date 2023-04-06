@@ -85,6 +85,112 @@
     flex-wrap: wrap;
   }
 
+  /* Section 5 */
+  .section-5 .hubspot-wrapper {
+    display: flex;
+    align-items: center;
+    /* flex-wrap: wrap; */
+    justify-content: center;
+    margin-top: var(--size-10);
+    gap: var(--size-40);
+  }
+
+  .hubspot-wrapper .portrait {
+    max-width: 343px;
+  }
+
+  .portrait .image-bottom {
+    margin-bottom: 4.125rem;
+  }
+
+  .hubspot-wrapper .hubspot {
+    align-items: center;
+    flex-basis: 549px;
+  }
+
+  .hubspot .img-wrapper {
+    align-self: center;
+  }
+
+  .img-wrapper img {
+    height: var(--size-30);
+  }
+
+  .hubspot p {
+    text-align: center;
+  }
+
+  /* Section-6 */
+  .section-6 .clients {
+    margin-top: 0;
+    margin-bottom: 0;
+    justify-content: space-between;
+  }
+
+  .clients .client {
+    max-width: var(--size-100);
+  }
+
+  /* Section-7 */
+  .pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas:
+      "long long"
+      "components images"
+      "cancel money";
+  }
+
+  .pricing-grid .long {
+    margin-right: 0;
+    max-width: 100%;
+    align-items: center;
+  }
+
+  .pricing-grid .small {
+    max-width: 19rem;
+  }
+
+  .pricing-card.long {
+    margin-bottom: var(--size-30);
+  }
+
+  .pricing-card.long :nth-child(5) {
+    margin-bottom: var(--size-40);
+  }
+
+  .pricing-grid h2 {
+    margin-bottom: var(--size-5);
+    margin-top: var(--size-40);
+  }
+
+  .line-pricing {
+    width: 100%;
+  }
+
+  .video-btn {
+    margin-bottom: var(--size-10);
+    margin-top: var(--size-40);
+  }
+
+  .pricing-grid .pricing-card {
+    padding: var(--size-5);
+  }
+
+  .pricing-card .credit-card {
+    margin-left: 0;
+  }
+
+  .pricing-btn {
+    margin-left: 0;
+  }
+
+  .long p {
+    margin-right: 0;
+    margin-left: 0;
+  }
+
   /* Footer */
   .lower-footer {
     margin-top: var(--size-40);
