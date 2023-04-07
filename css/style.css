@@ -982,7 +982,7 @@ footer {
   font-family: "Roboto", sans-serif;
 }
 
-.upper-footer {
+/* .upper-footer {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -990,6 +990,36 @@ footer {
   margin-bottom: 5rem;
   margin-left: var(--size-10);
   margin-right: var(--size-10);
+} */
+
+.upper-footer {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(1, auto);
+  grid-template-areas: "address company features documentation resources";
+  justify-items: center;
+  margin-bottom: var(--size-30);
+}
+
+.address {
+  grid-area: address;
+  width: 16.25rem;
+}
+
+.company {
+  grid-area: company;
+}
+
+.features {
+  grid-area: features;
+}
+
+.documentation {
+  grid-area: documentation;
+}
+
+.resources {
+  grid-area: resources;
 }
 
 .company h4,
@@ -998,6 +1028,7 @@ footer {
 .resources h4 {
   font-size: var(--size-18);
   color: var(--black);
+  margin-bottom: var(--size-10);
 }
 
 .logo img {

@@ -13,7 +13,8 @@
     display: block;
   }
 
-  section {
+  section,
+  footer {
     margin-top: var(--size-50);
   }
 
@@ -233,6 +234,20 @@
   }
 
   /* Footer */
+  .upper-footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas:
+      "address company features"
+      "address documentation resources";
+    justify-items: start;
+  }
+
+  .address-wrapper .logo {
+    margin: var(--size-10) 0;
+  }
+
   .lower-footer {
     margin-top: var(--size-40);
   }
