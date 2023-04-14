@@ -49,7 +49,7 @@
 
 .navbar-toggler span {
   color: grey;
-  font-size: var(--size-20);
+  font-size: var(--size-30);
   cursor: pointer;
   pointer-events: none;
 }
