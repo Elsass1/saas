@@ -1,24 +1,13 @@
-/***
-    The new CSS reset - version 1.7.3 (last updated 7.8.2022)
-    GitHub page: https://github.com/elad2412/the-new-css-reset
-***/
-
-/*
-    Remove all the styles of the "User-Agent-Stylesheet", except for the 'display' property
-    - The "symbol *" part is to solve Firefox SVG sprite bug
- */
-*:where(
-    :not(html, iframe, canvas, img, svg, video, audio):not(svg *, symbol *)
-  ) {
-  /* all: unset; */
-  display: revert;
-}
-
 /* Preferred box-sizing value */
 *,
 *::before,
 *::after {
   box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
 }
 
 /* Reapply the pointer cursor for anchor tags */
@@ -32,6 +21,10 @@ ol,
 ul,
 menu {
   list-style: none;
+}
+
+html:focus-within {
+  scroll-behavior: smooth;
 }
 
 /* removes spacing between cells in tables */
@@ -122,18 +115,37 @@ body {
   overflow-x: hidden;
 }
 
-footer,
-section {
+.container {
+  --max-width: 1024px;
+  --padding: 2rem;
+
+  width: min(var(--max-width), 100% - (var(--padding) * 2));
+  margin-inline: auto;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  border: transparent;
+  padding: 1rem 2rem;
+  color: var(--white);
+  background-color: var(--font-color-blue);
+  border-radius: 30px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+/* footer {
   margin-left: 5%;
   margin-right: 5%;
   margin-top: var(--size-150);
-}
+} */
 
-header {
+/* header {
   margin-left: 5%;
   margin-right: 5%;
   margin-top: var(--size-20);
-}
+} */
 
 *,
 ::after,
@@ -182,20 +194,21 @@ h3 {
   line-height: 1.2;
 }
 
-img {
-  width: 100%;
+img,
+picture,
+svg {
+  display: block;
   max-width: 100%;
-  vertical-align: middle;
   border-style: none;
 }
 
-.container {
+/* .container {
   width: 100%;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-}
+} */
 
 .btn {
   display: inline-block;
@@ -209,9 +222,14 @@ img {
   border: 1px solid transparent;
   padding: 0.9375rem 1.5625rem;
   border-radius: var(--size-30);
-  transition: ease-in-out 0.3s;
+  /* transition: ease-in-out 0.3s; */
   min-width: fit-content;
   align-items: center;
+}
+
+.title {
+  margin-bottom: var(--size-30);
+  text-align: center;
 }
 
 .title h3 {

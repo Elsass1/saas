@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Font</title>
+    <title>Brice</title>
     <meta name="description" content="Font | Your Digital Partner" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -24,47 +24,90 @@
 
   <div class="main-container">
 
-    <!-- Navbar -->
+    <!-- <div id="topNav" class="nav-wrapper bg-color">
+      <div class="container">
+          <a href="#"><img class="logo" src="./assets/project_logo/logo.svg" alt="logo"></a>
+          <button class="mobile-nav-toggle" aria-controls="primary-navigation">
+              <span class="icon-bar">☰</span>
+              <span class="icon-close">✕</span>
+          </button>
+          <nav class="primary-navigation opened" id="primary-navigation">
+              <ul aria-label="Primary" class="nav-list">
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">Features</a></li>
+                  <li><a href="#">Learn</a></li>
+                  <li><a href="#">Pricing</a></li>
+                  <li><a href="#">Hire Us</a></li>
+              </ul>
+              <div class="btn-nav">
+                  <button class="button">Buy Now</button>
+              </div>
+          </nav>
+      </div>
+  </div> -->
+
+
+
+    <!-- Navbar
     <div class="background">
       <header>
-          <nav id="navBar" class="navbar nav sticky">
+          <div id="navBar" class="navbar nav sticky white-bg">
+             
+                <a class="navbar-brand brand" href="/index.html"><img src="/assets/project_logo/logo.svg" alt=""/></a>
             <button
               class="navbar-toggler"
               aria-expanded="false"
               aria-controls="navbarDropdown"
-              >
-              <span>&#9776;</span>
-            </button>
-            <!-- <div class="brand"> -->
-            <a class="navbar-brand brand" href="/index.html"
-              ><img src="/assets/project_logo/logo.svg" alt=""
-            /></a>
-            <!-- </div> -->
+              >             
+              <span class="open">&#x2630;</span>
+            <span class="close">&times;</span>
+            </button>           
+            <nav class="menu-list  opened" id="menu-list">
             <ul class="navbar-nav">
-              <li class="nav-link">
-                <a href="#">Home</a>
-              </li>
-              <li class="nav-link">
-                <a class="blue-features" href="#">Features</a>
-              </li>
-              <li class="nav-link">
-                <a href="#">Learn</a>
-              </li>
-              <li class="nav-link">
-                <a href="#">Pricing</a>
-              </li>
-              <li class="nav-link">
-                <a href="#">Hire us</a>
-              </li>
-              <a class="btn" href="#">Buy Now</a>
+              <li class="nav-link"><a href="#">Home</a></li>
+              <li class="nav-link"><a class="blue-features" href="#">Features</a></li>
+              <li class="nav-link"><a href="#">Learn</a></li>
+              <li class="nav-link"><a href="#">Pricing</a></li>
+              <li class="nav-link"><a href="#">Hire us</a></li>
             </ul>
+            <div class="button-nav">
+              <button class="btn" href="#">Buy Now</button>
+            </div>
           </nav>
-      </header>
-    
+          </div>
+      </header> -->
+    <header>
+      <div class="right-bg"></div>
+      <div class="bottom-bg"></div>
+      <div id="topNav" class="nav-wrapper">
+        <div class="container">
+          <a href="#"
+            ><img class="logo" src="./assets/project_logo/logo.svg" alt="logo"
+          /></a>
+          <button class="mobile-nav-toggle" aria-controls="primary-navigation">
+            <span class="icon-bar">&#9776;</span>
+            <span class="icon-close">&#x2715;</span>
+          </button>
+          <nav class="primary-navigation" id="primary-navigation">
+            <ul aria-label="Primary" class="nav-list">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Features</a></li>
+              <li><a href="#">Learn</a></li>
+              <li><a href="#">Pricing</a></li>
+              <li><a href="#">Hire Us</a></li>
+            </ul>
+            <div class="btn-nav">
+              <button class="button">Buy Now</button>
+            </div>
+          </nav>
+        </div>
+      </div>
+
+
 
      <!-- Home page -->
-    <section class="section-1">
-      <div class="home-page">
+    <section class="container">
+      <div class="hero-header">
         <div class="text-block">
           <h2>
             Empowering <br />
@@ -81,36 +124,37 @@
           </div>
         </div>
         <div class="icons">
-          <div class="logo-icon">
-            <img src="/assets/logo_icons/google.png" alt="Google icon" />
+          <div class="logo-icon icon-1 small">
+            <img class="icon-img-small" src="/assets/logo_icons/google.png" alt="Google icon" />
           </div>
-          <div class="logo-icon">
-            <img
+          <div class="logo-icon icon-2">
+            <img class="icon-img"
               src="/assets/logo_icons/atlassian.png"
               alt="Atlassian icon"
             />
           </div>
-          <div class="logo-icon">
-            <img src="/assets/logo_icons/asana.png" alt="Asana icon" />
+          <div class="logo-icon icon-3">
+            <img class="icon-img" src="/assets/logo_icons/asana.png" alt="Asana icon" />
           </div>
-          <div class="logo-icon">
-            <img src="/assets/logo_icons/paypal.jpg" alt="Paypal icon" />
+          <div class="logo-icon icon-4">
+            <img class="icon-img" src="/assets/logo_icons/paypal.jpg" alt="Paypal icon" />
           </div>
-          <div class="logo-icon">
-            <img src="/assets/logo_icons/weave.png" alt="Weave icon" />
+          <div class="logo-icon icon-5 ">
+            <img class="icon-img" src="/assets/logo_icons/weave.png" alt="Weave icon" />
           </div>
-          <div class="logo-icon">
-            <img src="/assets/logo_icons/google-A.png" alt="Google-A icon" />
+          <div class="logo-icon icon-6 small">
+            <img class="icon-img-small" src="/assets/logo_icons/google-A.png" alt="Google-A icon" />
           </div>
-          <div class="logo-icon">
-            <img src="/assets/logo_icons/calendar.png" alt="Calendar icon" />
+          <div class="logo-icon icon-7">
+            <img class="icon-img" src="/assets/logo_icons/calendar.png" alt="Calendar icon" />
           </div>
         </div>
       </div>
     </section>
     </div>
+  </header>
        <!-- Key Benefits -->
-    <section class="section-2">
+    <section class="container">
         <div class="key-benefits">
           <div class="title">
             <h3>Key Benefits</h3>
@@ -169,7 +213,7 @@
     </section>
 
         <!-- Software for people -->
-    <section class="section-3">
+    <section class="container">
       <div class="software-for-people">
         <div class="video-wrapper">
           <div class="title-software-for-people">
@@ -192,7 +236,7 @@
     </section>
 
        <!-- Why front? -->
-    <section class="section-4">
+    <section class="container">
     <div class="title why-front">
       <h3>Why front?</h3>
       <p>
@@ -271,7 +315,7 @@
   </section>
 
         <!-- HubSpot -->
-    <section class="section-5">
+    <section class="container">
       <div class="hubspot-wrapper">
         <div class="portrait">
           <div class="image-top">
@@ -301,7 +345,8 @@
     </section>
 
       <!-- List of clients -->
-    <section class="section-6">
+    <section class="container">
+      <div class="logo-container">
       <h4>TRUSTED BY WORLD'S BEST</h4>
       <div class="clients">
         <div class="client">
@@ -320,15 +365,17 @@
           <img src="/assets/company_logos/spotify.svg" alt="Spotify" />
         </div>
       </div>
+    </div>
     </section>
 
        <!-- Pricing -->
-       <section class="section-7">
+       <section class="container">
         <div class="title">
           <h3>Pricing</h3>
           <p>No additional costs. Pay for what you use</p>
         </div>
-        <div class="pricing-grid">
+        <div class="pricing-container">
+          <div class="pricing-box">
           <div class="pricing-card long">
             <h2>$50 <span>/mo</span></h2>
             <div class="line-pricing">
@@ -344,29 +391,37 @@
                 <span>Play Video</span></a
               >
             </div>
-            <p class="credit-card">No credit card required.</p>
+            <span id="credit-card">No credit card required.</span>
           </div>
-  
-          <div class="pricing-card components small">
-            <div class="icon-card">
-              <img src="/assets/icons/components.svg" alt="components" />
+            <div class="pricing-cards-small">
+              <div class="top-row">
+                <div class="left-top-small">
+              <div class="pricing-card components small">
+                <div class="icon-card">
+                  <img src="/assets/icons/components.svg" alt="components" />
+                </div>
+                <h3>Hundreds of components</h3>
+                <p>
+                  Achieve maximum productivity with minimum effort with Front and
+                  create robust Limitless products.
+                </p>
+              </div>
+              </div>
+              <div class="right-top-small">
+              <div class="pricing-card images small">
+                <div class="icon-card">
+                  <img src="/assets/icons/images.svg" alt="Images" />
+                </div>
+                <h3>Images included</h3>
+                <p>
+                  Image included. We made custom license for all our premium images in
+                  the front.
+                </p>
+              </div>
             </div>
-            <h3>Hundreds of components</h3>
-            <p>
-              Achieve maximum productivity with minimum effort with Front and
-              create robust Limitless products.
-            </p>
           </div>
-          <div class="pricing-card images small">
-            <div class="icon-card">
-              <img src="/assets/icons/images.svg" alt="Images" />
-            </div>
-            <h3>Images included</h3>
-            <p>
-              Image included. We made custom license for all our premium images in
-              the front.
-            </p>
-          </div>
+              <div class="bottom-row">
+                <div class="left-bottom-small">
           <div class="pricing-card cancel small">
             <div class="icon-card">
               <img src="/assets/icons/cancel.svg" alt="cancel" />
@@ -377,6 +432,8 @@
             </div>
             <p>If it's not for you, just cancel, no hidden costs of fees.</p>
           </div>
+        </div>
+        <div class="right-bottom-small">
           <div class="pricing-card money small">
             <div class="icon-card">
               <img src="/assets/icons/moneyback.svg" alt="money back" />
@@ -385,11 +442,18 @@
             <p>100% guaranteed money back. No questions asked</p>
           </div>
         </div>
+        </div>
+        </div>
+        </div>
+        </div>
       </section>
 
           <!-- Hire us -->
-    <section class="section-8">
-      <div class="hire-us-container">
+    <section class="form-background">      
+    <div class="container">
+      <div class="hire-us">
+        <div class="hire-us-container">
+        <div class="hire-us-block">
         <div class="text-block-2">
           <h3>Hire Us</h3>
           <div class="text-wrapper">
@@ -404,8 +468,10 @@
           </div>
         </div>
         <div class="testimonials">
+          <div class="charlotte-moore">
           <p>Charlotte Moore</p>
-          <p>Head of Commercial, Slack</p>
+          <span id="slack">Head of Commercial, Slack</span>
+        </div>
           <div class="images-2">
             <div class="image">
               <img class="img-1" src="/assets/people/man_one.jpg" alt="man" />
@@ -419,8 +485,8 @@
             </div>
           </div>
         </div>
-      <!-- </div> -->
-      <div class="form-container">
+        </div>
+       <div class="form-container">
         <h3>Fill out the form and we'll be in touch as soon as possible</h3>
         <form action="">
           <fieldset class="form-element">
@@ -471,11 +537,14 @@
             <button type="submit" class="btn">Get started</button>
           </fieldset>
         </form>
-      </div>
-    </section>
+       </div>
+      </div>  
+    </div>
+  </section>
 
        <!-- Footer -->
-       <footer>
+       <footer class="container">
+        <div class="footer-container">
         <div class="upper-footer">
             <div class="upper-footer-element address">
               <ul class="address-wrapper">
@@ -555,34 +624,92 @@
             </div>
           </div>
           <div class="lower-wrapper">
-            <p class="footer-text">&#169;Front. 2022 Responsive designs. All rights reserved. </p>
+            <p class="footer-text">&#169;Front. 2023 Responsive designs. All rights reserved. </p>
             <p class="footer-text">When you visit or interact with our sites, services or tools, we or our authorised service provider may use cookies for storing information to help provide you with a better, faster and safer experience and for marketing purposes. </p>
           </div>
         </div>
+      </div>
       </footer>
 
-  </div>
-  </div>
+  <!-- </div>
+  </div> -->
         
 
   <script>
-    const nav = document.getElementById("navBar");
-    window.onscroll = function () {
-      if (window.pageYOffset > 400) {
-        nav.classList.add("sticky");
-      }  else {
-        nav.classList.remove("sticky")
-      };
-    }
+    // const nav1 = document.getElementById("navBar");
+    // window.onscroll = function () {
+    //   if (window.pageYOffset > 800) {
+    //     nav1.classList.add("sticky");
+    //   }  else {
+    //     nav1.classList.remove("sticky")
+    //   };
+    // }
     
-    const navButton = document.querySelector("button[aria-expanded]");
+    // const navButton = document.querySelector("button[aria-expanded]");
 
-    function toggleNav({target}) {
-      const expanded = target.getAttribute("aria-expanded") === "true" || false;
-    navButton.setAttribute("aria-expanded", !expanded)
-    }
+    // function toggleNav({target}) {
+    //   const expanded = target.getAttribute("aria-expanded") === "true" || false;
+    // navButton.setAttribute("aria-expanded", !expanded)
+    // }
 
-    navButton.addEventListener("click", toggleNav);
+    // navButton.addEventListener("click", toggleNav);
+
+    // const navButton = document.querySelector(".navbar-toggler")
+    // const menuList = document.querySelector(".menu-list")
+    // const navBar = document.querySelector(".navbar")
+
+    // navButton.addEventListener("click", () => {
+    //   navBar.classList.toggle("white-bg");
+    // });
+    // navButton.addEventListener("click", () =>{
+    //   menuList.classList.toggle("opened");
+    // });
+
+    
+// const navToggle = document.querySelector(".mobile-nav-toggle");
+// const primaryNav = document.querySelector(".primary-navigation");
+// const navWrapper = document.querySelector(".nav-wrapper");
+
+// navToggle.addEventListener("click", () => {
+//     navWrapper.classList.toggle("bg-color");
+// });
+
+// navToggle.addEventListener("click", () => {
+//     primaryNav.classList.toggle("opened");
+// });
+
+// const nav = document.getElementById("topNav");
+// window.onscroll = function () {
+//     if (window.pageYOffset > 800) {
+//         nav.classList.add("sticky");
+//     }
+//     else { 
+//         nav.classList.remove("sticky");
+//     }
+// }
+
+const navToggle = document.querySelector(".mobile-nav-toggle");
+const primaryNav = document.querySelector(".primary-navigation");
+const navWrapper = document.querySelector(".nav-wrapper");
+
+navToggle.addEventListener("click", () => {
+  navWrapper.classList.toggle("bg-color");
+});
+
+navToggle.addEventListener("click", () => {
+  primaryNav.classList.toggle("opened");
+});
+
+const nav = document.getElementById("topNav");
+window.onscroll = function () {
+  if (window.pageYOffset > 800) {
+    nav.classList.add("sticky");
+  } else {
+    nav.classList.remove("sticky");
+  }
+};
+
+
   </script>
 
   </div>
