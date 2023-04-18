@@ -135,18 +135,6 @@ body {
   cursor: pointer;
 }
 
-/* footer {
-  margin-left: 5%;
-  margin-right: 5%;
-  margin-top: var(--size-150);
-} */
-
-/* header {
-  margin-left: 5%;
-  margin-right: 5%;
-  margin-top: var(--size-20);
-} */
-
 *,
 ::after,
 ::before {
@@ -202,14 +190,6 @@ svg {
   border-style: none;
 }
 
-/* .container {
-  width: 100%;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
-} */
-
 .btn {
   display: inline-block;
   font-weight: 500;
@@ -238,3 +218,32 @@ svg {
   line-height: 31px;
   text-align: center;
 }
+
+/* I can't mark work the burger toggle with the open/close burger to cross */
+
+[aria-controls="primary-navigation"] {
+  display: none;
+}
+
+[aria-controls="primary-navigation"] {
+  display: block;
+  /* margin-bottom: 10px; */
+}
+
+/* [aria-expanded="true"] ~ ul {
+  display: block;
+  max-height: 500px;
+  transform: rotateX(0);
+} */
+
+[aria-expanded="false"] .icon-close {
+  display: none;
+}
+
+[aria-expanded="true"] .icon-close {
+  display: inline-block;
+}
+
+/* [aria-expanded="true"] .icon-open {
+  display: none;
+} */

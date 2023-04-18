@@ -6,8 +6,6 @@
     width: min(var(--max-width), 100% - (var(--padding) * 2));
     margin-inline: auto;
     padding: 1rem;
-    /* margin-left: 5%;
-    margin-right: 5%; */
   }
 
   header {
@@ -45,7 +43,12 @@
     padding: 2rem;
   }
 
-  .icon-bar {
+  .icon-open {
+    font-size: var(--size-30);
+    color: var(--font-color-dark-background);
+  }
+
+  .icon-close {
     font-size: var(--size-30);
     color: var(--font-color-dark-background);
   }
@@ -411,6 +414,7 @@
 
   .video-thumbnail {
     margin-top: var(--size-50);
+    height: 14rem;
   }
 
   .hubspot-wrapper {
@@ -521,14 +525,6 @@
     margin-top: 10px;
     margin-right: 20px;
   }
-
-  /* .form-element .privacy-policy :nth-child(1) {
-    display: none;
-  }
-
-  .form-element .privacy-policy :nth-child(2) {
-    margin-left: 47px;
-  } */
 
   .privacy-policy a:nth-child(1) {
     display: none;

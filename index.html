@@ -84,8 +84,8 @@
           <a href="#"
             ><img class="logo" src="./assets/project_logo/logo.svg" alt="logo"
           /></a>
-          <button class="mobile-nav-toggle" aria-controls="primary-navigation">
-            <span class="icon-bar">&#9776;</span>
+          <button class="mobile-nav-toggle" aria-expanded="false" aria-controls="primary-navigation">
+            <span class="icon-open">&#9776;</span>
             <span class="icon-close">&#x2715;</span>
           </button>
           <nav class="primary-navigation" id="primary-navigation">
@@ -303,6 +303,8 @@
         <p>Page layouts</p>
       </div>
     </div>
+  </section>
+  <section class="container">
     <div class="video-thumbnail">
       <a
         href="https://www.youtube.com/watch?v=SwoL4Qi_FJk"
@@ -310,7 +312,7 @@
       >
         <div class="player-wrapper"><i class="fa-solid fa-play"></i></div>
       </a>
-      <img src="/assets/banners/banner_two.jpg" alt="video thumbnail" />
+      <!-- <img src="/assets/banners/banner_two.jpg" alt="video thumbnail" /> -->
     </div>
   </section>
 
@@ -721,6 +723,14 @@ window.onscroll = function () {
     nav.classList.remove("sticky");
   }
 };
+
+
+const navButton = document.querySelector("button[aria-expanded]");
+    function toggleNav({ target }) {
+      const expanded = target.getAttribute("aria-expanded") === "true" || false;
+      navButton.setAttribute("aria-expanded", !expanded);
+    }
+    navButton.addEventListener("click", toggleNav);
 
 
   </script>
