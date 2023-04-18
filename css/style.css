@@ -191,6 +191,7 @@ header {
   line-height: 48px;
   margin-top: var(--size-50);
   margin-bottom: 11px;
+  padding-right: 8.75rem;
 }
 
 .text-block p {
@@ -1027,10 +1028,27 @@ textarea {
   resize: none;
 }
 
+.form-checkbox {
+  display: flex;
+  margin-bottom: var(--size-10);
+}
+
+.top-checkbox .form-element {
+  margin: 0;
+  margin-left: var(--size-30);
+  margin-top: var(--size-10);
+}
+
 .checkbox {
-  width: 40px;
-  margin-left: 0;
-  margin-right: var(--size-20);
+  width: var(--size-30);
+  height: var(--size-30);
+  margin-right: var(--size-30);
+}
+
+.bottom-checkbox {
+  /* width: 54%; */
+  margin-top: 10px;
+  margin-right: 9.375rem;
 }
 
 .checkbox-text {
@@ -1089,6 +1107,19 @@ footer {
   gap: var(--size-30);
 }
 
+.logo-footer {
+  display: flex;
+  flex-direction: column;
+  width: 17rem;
+  gap: 2rem;
+}
+
+.left-footer {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 11rem;
+}
+
 .upper-footer-element .address {
   width: 239px;
   display: flex;
@@ -1098,6 +1129,11 @@ footer {
 .address-wrapper {
   display: flex;
   flex-direction: column;
+  gap: 0.5rem;
+}
+
+.mini-logo {
+  width: 7rem;
 }
 
 /* .address {
@@ -1189,7 +1225,7 @@ footer {
   display: flex;
   gap: 0.5rem;
   color: var(--font-base);
-  font-size: var(--fs-14);
+  font-size: var(--size-14);
 }
 
 .footer-policy p:nth-child(2),
@@ -1202,6 +1238,7 @@ p:nth-child(4) {
 .social {
   display: flex;
   align-items: center;
+  margin-left: 22.375rem;
 }
 
 .social i {
@@ -1213,7 +1250,7 @@ p:nth-child(4) {
   cursor: pointer;
 }
 
-.social select {
+.footer-select {
   background-color: var(--font-color-light-background);
   border: none;
   height: 2.5rem;
