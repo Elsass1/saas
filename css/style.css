@@ -63,8 +63,8 @@ header {
 
 .nav-list a {
   font-weight: 200;
-  color: var(--font-base);
-  font-size: var(--fs-14);
+  color: var(--font-color-base-base);
+  font-size: var(--size-14);
 }
 
 .mobile-nav-toggle {
@@ -97,9 +97,9 @@ header {
   font-weight: 600;
   color: var(--black);
   font-weight: 500;
-  line-height: 48px;
+  line-height: 3rem;
   margin-top: var(--size-50);
-  margin-bottom: 11px;
+  margin-bottom: 0.6875rem;
   padding-right: 8.75rem;
 }
 
@@ -107,7 +107,7 @@ header {
   margin-bottom: var(--size-30);
   font-weight: 500;
   font-size: var(--size-14);
-  line-height: 17px;
+  line-height: 1.0625rem;
 }
 
 .video-btn {
@@ -123,7 +123,7 @@ header {
 
 .video-btn i {
   font-size: var(--size-20);
-  padding-right: 10px;
+  padding-right: var(--size-10);
 }
 
 .video-btn a:nth-child(2) {
@@ -1049,8 +1049,6 @@ footer {
 }
 
 .footer-line hr {
-  /* margin-left: var(--size-10);
-  margin-right: var(--size-10); */
   background-color: #e6e9f2;
   height: 1px;
 }
@@ -1058,8 +1056,7 @@ footer {
 .lower-footer {
   display: flex;
   flex-direction: column;
-  /* flex-wrap: wrap; */
-  margin-top: var(--size-50);
+  margin-top: 0;
   margin-bottom: var(--size-20);
 }
 
