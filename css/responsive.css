@@ -466,7 +466,7 @@
     grid-auto-flow: row;
     text-align: center;
     gap: 4rem;
-    max-width: 328px;
+    max-width: 20.5rem;
     padding-bottom: 0;
   }
 
@@ -522,8 +522,8 @@
 
   .bottom-checkbox {
     /* width: 54%; */
-    margin-top: 10px;
-    margin-right: 20px;
+    margin-top: var(--size-10);
+    margin-right: var(--size-20);
   }
 
   .privacy-policy a:nth-child(1) {
@@ -531,7 +531,7 @@
   }
 
   .privacy-policy a:nth-child(2) {
-    margin-left: 60px;
+    margin-left: 3.75rem;
   }
 
   .upper-footer {
